@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/main.js"></script>
+    <title>Table Writer</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="main_heading">Table Writer</h1>
+        <p class="subheading">Please fill out details and see the result</p>
+        <div class="row">
+            <div class="row_left">
+                <h3 style="text-align: center; font-size: 25px;margin-bottom: 65px;">Options</h3>
+                <label>Select Table: </label>
+                <select id="table_num">
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+
+                <br/><br/><br/>
+
+                <label>Table Size: </label>
+                <select id="table_size">
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                </select>
+
+                <br/><br/><br/>
+
+                <label>Sort Type: </label>
+                <select id="table_sort">
+                    <option value="asc">Ascending</option>
+                    <option value="desc">Descending</option>
+                </select>
+
+                <br/><br/><br/>
+
+                <label>Table Options: </label>
+                <select id="table_options">
+                    <option value="all_num">All</option>
+                    <option value="even_num">Even</option>
+                    <option value="odd_num">Odd</option>
+                </select>
+
+                <br/>
+                <button class="btn_show" id="display_btn" type="btn" 
+                onclick="display_table()">Show</button>
+            </div>
+            <div class="row_right">
+                <h3 style="text-align: center; font-size: 25px;">Results</h3>
+                <div class="result_div"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
